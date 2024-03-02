@@ -30,24 +30,33 @@
 - Instance with bootstrap user data (nginx install)
 - Security group with SSH an HTTP ports opened
 
+## Structure
+For code simplicity, reusability and flexibility, each module has been separated into 4 files:
+- [terraform.tf](https://github.com/gregoryoffodum/VPC_EC2_IAC/blob/master/VPC/terraform.tf): terraform configuration
+- [provider.tf](https://github.com/gregoryoffodum/VPC_EC2_IAC/blob/master/VPC/povider.tf): provider details
+- [main.tf](https://github.com/gregoryoffodum/VPC_EC2_IAC/blob/master/VPC/main.tf): resources to provision
+- [variables.tf](https://github.com/gregoryoffodum/VPC_EC2_IAC/blob/master/VPC/variables.tf): variables file
+
+
 ## Assumptions
-- Terraform has been installed on your machine/EC2 instance compatible with version in terraform block. (I have configured the version to work with the one already installed in my VM). To confirm version:
+- Terraform has been installed on your machine/EC2 instance compatible with version in [terraform block](https://github.com/gregoryoffodum/VPC_EC2_IAC/blob/master/VPC/terraform.tf) (I have configured the version to work with the one already installed in my VM). To confirm version:
 
 ```
 terraform --version
 ```
 - One AWS authentication method has been implemented: access and secret keys/IAM role/profile.
-- Key pair has been generated for EC2 resource and code updated acordingly
+- Key pair has been generated for [EC2 resource](https://github.com/gregoryoffodum/VPC_EC2_IAC/blob/master/EC2/main.tf) and code updated acordingly
 
 ## Usage
- [download.sh](https://github.com/gregoryoffodum/DataOpsExercise/blob/master/download.sh) contains wget command scripting to download file
+
 - Clone repository
 ```
 git clone https://github.com/gregoryoffodum/VPC_EC2_IAC.git
 ```
 - Initialize backend and provider plugins:
   
-```terraform init
+```
+terraform init
 ```
 
 - Confirm resources to be added:
