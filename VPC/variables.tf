@@ -34,3 +34,24 @@ variable "aws_availabilityzones" {
   type    = list(string)
   default = ["us-east-1a", "us-east-1b", "us-east-1c"]
 }
+
+variable "ami_maps" {
+  type = map(string)
+  default = {
+    "Redhat" = "ami-0fe630eb857a6ec83"
+    "Ubuntu" = "ami-07d9b9ddc6cd8dd30"
+    "Amazon" = "ami-0440d3b780d96b29d"
+  }
+  description = "AMI Ids With OS Distributions"
+}
+
+variable "os_name" {
+  type    = string
+  default = "Redhat"
+}
+
+
+variable "instance_type" {
+  type    = string
+  default = "t2.micro"
+}
