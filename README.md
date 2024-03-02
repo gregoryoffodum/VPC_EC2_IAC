@@ -39,7 +39,7 @@ For simplicity, reusability and flexibility, the code has been separated into 4 
 
 
 ## Assumptions
-- Terraform has been installed on your machine/EC2 instance compatible with version in [terraform block](https://github.com/gregoryoffodum/VPC_EC2_IAC/blob/master/VPC/terraform.tf) (I have configured the version to work with the one already installed in my VM). To confirm version:
+- Terraform has been installed on your machine/EC2 instance and is compatible with version in [terraform block](https://github.com/gregoryoffodum/VPC_EC2_IAC/blob/master/VPC/terraform.tf) (I have configured the version to work with the one already installed in my VM). To confirm version:
 
 ```
 terraform --version
