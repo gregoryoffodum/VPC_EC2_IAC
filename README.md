@@ -45,7 +45,7 @@ For code simplicity, reusability and flexibility, each module has been separated
 terraform --version
 ```
 - One AWS authentication method has been implemented: access and secret keys/IAM role/profile.
-- Key pair has been generated for [EC2 resource](https://github.com/gregoryoffodum/VPC_EC2_IAC/blob/master/EC2/main.tf) and code updated acordingly
+- Key pair has been generated for EC2 resource and _key_name_ updated in [main.tf](https://github.com/gregoryoffodum/VPC_EC2_IAC/blob/master/EC2/main.tf) accordingly.
 
 ## Usage
 
