@@ -31,7 +31,7 @@
 - Security group with SSH an HTTP ports opened
 
 ## Structure
-For code simplicity, reusability and flexibility, each module has been separated into 4 files:
+For simplicity, reusability and flexibility, the code has been separated into 4 files:
 - [terraform.tf](https://github.com/gregoryoffodum/VPC_EC2_IAC/blob/master/VPC/terraform.tf): terraform configuration
 - [provider.tf](https://github.com/gregoryoffodum/VPC_EC2_IAC/blob/master/VPC/povider.tf): provider details
 - [main.tf](https://github.com/gregoryoffodum/VPC_EC2_IAC/blob/master/VPC/main.tf): resources to provision
@@ -45,7 +45,7 @@ For code simplicity, reusability and flexibility, each module has been separated
 terraform --version
 ```
 - One AWS authentication method has been implemented: access and secret keys/IAM role/profile.
-- Key pair has been generated for EC2 resource and _key_name_ updated in [main.tf](https://github.com/gregoryoffodum/VPC_EC2_IAC/blob/master/EC2/main.tf) accordingly.
+- Key pair has been generated for EC2 resource and _key_name_ updated in [main.tf](https://github.com/gregoryoffodum/VPC_EC2_IAC/blob/master/VPC/main.tf) accordingly.
 
 ## Usage
 
