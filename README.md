@@ -28,7 +28,7 @@
 
 ## EC2 resources
 - Instance with bootstrap user data (nginx install)
-- Security group with SSH an HTTP ports opened
+- Security group with SSH and HTTP ports opened
 
 ## Structure
 For simplicity, reusability and flexibility, the code has been separated into 4 files:
@@ -64,7 +64,7 @@ terraform init
 ```
 terraform plan 
 ```
-- Apply each module:
+- Apply module:
 ```
 terraform apply
 ```
